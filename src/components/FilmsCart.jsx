@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 import PropTypes from "prop-types";
 
-export const FilmsCart = ({title, overview, date, img}) => {
+export const FilmsCart = ({title, overview, date, img, lang}) => {
+  
   return (
+
     <div  className="card">
         <h3>{title}</h3>
         <img src={img} alt={title} />

@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { getFilms, getSearchFilms } from "../helpers/getFilms";
 
-export const UseAxiosFilms = () => {
+export const UseAxiosFilms = (language) => {
+  console.log("🚀 ~ file: UseAxiosFilms.jsx:5 ~ UseAxiosFilms ~ language:", language)
   const [films, setFilms] = useState([]);
   const getData = async () => {
-    const resultsFilmsApi = await getFilms();
+    const resultsFilmsApi = await getFilms(language);
     setFilms(resultsFilmsApi);
   };
 
@@ -17,12 +18,13 @@ export const UseAxiosFilms = () => {
   };
 };
 
-export const UseAxiosSearchFilms = (value) => {
+export const UseAxiosSearchFilms = (value, language) => {
+  console.log("🚀 ~ file: UseAxiosFilms.jsx:21 ~ UseAxiosSearchFilms ~ language:", language)
   const [filmsSearch, setFilmsSearch] = useState([]);
   
   const getDataSearch = async () => {
     if(value === '') return;
-    const resultsFilmsApiSearch = await getSearchFilms(value);
+    const resultsFilmsApiSearch = await getSearchFilms(value, language);
     setFilmsSearch(resultsFilmsApiSearch);
   };
   
