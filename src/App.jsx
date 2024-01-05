@@ -4,7 +4,7 @@ import { SearchFilms } from "./components/SearchFilms";
 import { ChangeLanguage } from "./components/ChangeLanguage";
 
 function App() {
-  const [language, setLenguage] = useState('') 
+  const [language, setLenguage] = useState('es-ES') 
   const [value, setValue] = useState('')
 
   return (

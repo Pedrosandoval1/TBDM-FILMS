@@ -17,7 +17,63 @@
     padding: 10px 15px;
     width: 100%;
   }
-  
+/* 
+  select{
+    margin: 10px 0;
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+  } */
+
+
+.content-select select{
+  margin-top: 10px;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.content-select select::-ms-expand {
+  display: none;
+}
+.content-select{
+	max-width: 250px;
+	position: relative;
+}
+ 
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #050505;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+    font-size: 17px;
+}
+
+select option{
+  font-size: 17px;
+}
+select option:hover{
+  background-color: #05ffff;
+  color: black;
+  cursor: pointer; 
+}
+ 
+.content-select select:hover{
+	background: #8f9191;
+}
   h2 {
     font-size: 1.5rem;
   }

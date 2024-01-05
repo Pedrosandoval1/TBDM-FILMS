@@ -11,7 +11,7 @@ export const UseAxiosFilms = (language) => {
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [language]);
 
   return {
     films,
